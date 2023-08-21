@@ -7,9 +7,9 @@ app = Flask(__name__)
 
 # route -> monitoramento.com/Temperatura
 # funcao  -> o que será exibido
-@app.route("/<valueTemperature>")
+@app.route("/")
 def homepage(valueTemperature):
-    return render_template("index.html", valueTemp=valueTemperature)
+    return render_template("index.html", valueTemp=80)
 
 @app.route("/contato")
 def contato():
